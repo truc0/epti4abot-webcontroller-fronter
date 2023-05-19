@@ -1,5 +1,7 @@
 # EPTI4ABOT Web Controller (Frontend)
 
+[![.github/workflows/publish.yml](https://github.com/truc0/epti4abot-webcontroller-fronter/actions/workflows/publish.yml/badge.svg?branch=main&event=push)](https://github.com/truc0/epti4abot-webcontroller-fronter/actions/workflows/publish.yml)
+
 This project aims at providing a easy-to-use controller interface to user.
 
 ## Usage
