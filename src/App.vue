@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { useStore } from './stores';
-import { toRefs } from 'vue';
+import vhCheck from 'vh-check';
+import { onMounted, toRefs } from 'vue';
+
+onMounted(vhCheck); // update mobile browser vh
 
 const store = useStore();
 const {
@@ -11,7 +14,7 @@ store.updateConnectionStatus();
 </script>
 
 <template>
-  <div class="flex flex-col h-screen">
+  <div class="flex flex-col" style="height: calc(100vh - var(--vh-offset, 0px))">
     <header class="w-full h-12 border-b flex items-center justify-between px-4">
       <router-link to="/">
         <div class="w-8 h-7 opacity-70 grayscale">
