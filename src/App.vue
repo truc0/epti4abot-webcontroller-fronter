@@ -14,10 +14,10 @@ store.updateConnectionStatus();
 </script>
 
 <template>
-  <div class="flex flex-col" style="height: calc(100vh - var(--vh-offset, 0px))">
-    <header class="w-full h-12 border-b flex items-center justify-between px-4">
+  <div class="flex flex-col dark:bg-slate-700 dark:text-slate-50 transition" style="height: calc(100vh - var(--vh-offset, 0px))">
+    <header class="w-full h-12 border-b dark:border-b-slate-500 flex items-center justify-between px-4">
       <router-link to="/">
-        <div class="w-8 h-7 opacity-70 grayscale">
+        <div class="w-8 h-7 opacity-70 grayscale dark:grayscale-0 dark:opacity-100">
           <img src="/radar.svg" class="max-w-full max-h-full">
         </div>
       </router-link>
@@ -25,9 +25,9 @@ store.updateConnectionStatus();
       <div class="flex h-full items-center">
         <div class="relative">
           <span class="block rounded shadow h-2 w-2" :class="{
-            'bg-lime-500': connectionStatus === 'Connected',
-            'bg-orange-500': connectionStatus === 'Connecting',
-            'bg-red-500': connectionStatus === 'Disconnected',
+            'bg-lime-500 dark:shadow-lime-500': connectionStatus === 'Connected',
+            'bg-orange-500 dark:shadow-orange-500': connectionStatus === 'Connecting',
+            'bg-red-500 dark:shadow-red-500': connectionStatus === 'Disconnected',
           }"></span>
           <span class="absolute top-0 left-0 block rounded shadow h-2 w-2" :class="{
             'bg-lime-500': connectionStatus === 'Connected',
@@ -47,7 +47,7 @@ store.updateConnectionStatus();
       <router-view /> 
     </main>
 
-    <footer class="border-t h-24 text-gray-500 flex items-center justify-center text-center py-4">
+    <footer class="border-t dark:border-t-slate-500 h-24 text-gray-500 dark:text-slate-400 flex items-center justify-center text-center py-4">
       Copyright &copy; 2023 ICE3505
       <br>
       Automatic Obstacle Avoidance Car Group

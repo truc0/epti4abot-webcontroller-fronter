@@ -58,12 +58,12 @@ store.useSyncPage();
 
 <template>
   <div class="h-full w-full flex items-center justify-center" ref="container">
-    <div class="relative rounded-full bg-gray-200 shadow-inner w-56 h-56 origin-center" ref="joystickContainer">
+    <div class="relative rounded-full bg-gray-200 dark:bg-slate-600 shadow-inner w-56 h-56 origin-center" ref="joystickContainer">
       <div class="absolute rounded-full w-24 h-24 -translate-x-1/2 -translate-y-1/2 duration-300"
         ref="joystick"
         :class="{
-          'shadow-md bg-gray-50 transition-all': !pressed,
-          'shadow-xl bg-gray-100 transition': pressed,
+          'shadow-md bg-gray-50 dark:bg-slate-400 transition-all': !pressed,
+          'shadow-xl bg-gray-100 dark:bg-slate-400/80 transition': pressed,
         }"
         :style="{
           top: `calc(50% + ${position.y}px)`,
