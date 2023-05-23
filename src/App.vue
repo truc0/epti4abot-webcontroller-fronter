@@ -47,7 +47,7 @@ store.updateConnectionStatus();
       <router-view /> 
     </main>
 
-    <footer class="border-t dark:border-t-slate-500 h-24 text-gray-500 dark:text-slate-400 flex items-center justify-center text-center py-4">
+    <footer class="border-t dark:border-t-slate-500 h-24 text-gray-500 dark:text-slate-400 flex items-center justify-center text-center py-4 select-none">
       Copyright &copy; 2023 ICE3505
       <br>
       Automatic Obstacle Avoidance Car Group
