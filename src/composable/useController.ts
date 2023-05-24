@@ -80,9 +80,9 @@ export const useController = (options: Partial<UseController> = {}) => {
   );
 
   const turnParams: useNumberPressControl = {
-    minVal: -5,
-    maxVal: 5,
-    step: 2,
+    minVal: -100,
+    maxVal: 100,
+    step: 10,
     interval: params.interval,
   };
   const { onKeyDown: onLeftKeyDown, onKeyUp: onLeftKeyUp } = useNumberPressControl(turn, turnParams);
